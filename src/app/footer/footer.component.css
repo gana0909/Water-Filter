@@ -1,0 +1,15 @@
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer h5 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.custom-footer {
+  background-color: #d7e2eb; 
+}
+
+.custom-footer  * {
+  color: #134563 !important; 
+}

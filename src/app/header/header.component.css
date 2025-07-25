@@ -1,0 +1,158 @@
+.custom-navbar {
+  background-color: #d7e2eb;
+  padding: 10px 20px;
+}
+.custom-navbar * {
+  color: #134563 !important; 
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+
+.logo-img {
+  height: 45px;
+}
+
+.site-name {
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+}
+.contact-icon {
+  color: white;
+  font-size: 18px;
+}
+
+.contact-text {
+  color: white;
+  font-weight: 500;
+}
+.logo-img {
+  height: 45px;
+  width: auto;
+  object-fit: contain;
+}
+.logo-img {
+  height: 45px;
+  width: auto;
+  object-fit: contain;
+}
+
+.company-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.2;
+}
+
+.brand-main {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Segoe UI', sans-serif; 
+  color: #fbc02d; 
+}
+
+.brand-sub {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fbc02d;
+}
+
+.logo-img {
+  height: 45px;
+  width: auto;
+  object-fit: contain;
+}
+
+.logo-name-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.company-name {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.brand-main {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fbc02d;
+}
+
+.brand-sub {
+  font-size: 14px;
+  font-weight: 400;
+  color: #fbc02d;
+}
+
+.contact-icon {
+  font-size: 18px;
+  color: white;
+}
+
+.contact-text {
+  font-weight: 500;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: #134563;
+  font-weight: bold;
+}
+
+.active-link {
+  color: #d7e2eb
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.fixed-header-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Give spacing below header in main layout so content doesn't go behind it */
+body, .main-content {
+  padding-top: 140px; /* adjust if header height changes */
+}
+
+.border-line {
+  border-bottom: 2px solid #ccc;
+}
+
+.border-line-light {
+  border-bottom: 2px solid #dddcdc;
+}
+
+.page-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background-color: #fbfbfb;
+  padding: 10px;
+}
+
+

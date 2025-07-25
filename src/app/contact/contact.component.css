@@ -1,0 +1,19 @@
+.contact-info i,
+.contact-form i {
+  width: 35px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border-radius: 8px;
+}
+
+.contact-form button {
+  border-radius: 20px;
+}
+
+.map-wrapper iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+}

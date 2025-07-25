@@ -1,0 +1,98 @@
+
+.mainCarousel {
+  padding-top: 120px; /* or whatever is your header height */
+}
+
+.product-horizontal::-webkit-scrollbar,
+.product-vertical::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+
+.product-horizontal::-webkit-scrollbar-thumb,
+.product-vertical::-webkit-scrollbar-thumb {
+  background-color: #1e88e5;
+  border-radius: 10px;
+}
+.page-nav {
+  background-color: #1e1e1e; 
+}
+/*kahi ch change nahi */
+
+.custom-carousel-container {
+  height: 400px;       
+  padding: 20px;       
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  align-items: center;
+}
+.carousel-inner {
+  overflow: hidden;
+  border-radius: 12px;
+  text-align: center;
+}
+/*
+/*container la padding ani Size fix zali*/
+
+.carousel-img {
+  width: 100%;
+  max-width: 1200px;
+  height: 250px;
+  /*object-fit: cover;*/
+  display: block;
+  margin: 0 auto; /* This ensures image is centered */
+  border-radius: 12px;
+}
+
+@media (min-width: 768px) {
+  .carousel-img {
+    height: 400px;
+    width: 70%;
+  }
+  
+}
+
+@media (min-width: 1200px) {
+  .carousel-img {
+    height: 500px;
+    width: 50%;
+  }
+}
+
+
+/*product lit edting tart*/
+
+.product-card {
+  width: 200px;
+  min-width: 200px;
+  height: 320px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  background-color: #fff;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-title {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.card-text {
+  font-size: 14px;
+}
+/*product lit edting end*/
+
+
+
