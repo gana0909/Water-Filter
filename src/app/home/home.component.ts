@@ -68,7 +68,5 @@ export class HomeComponent {
     }
   ];
 
-  goToDetails(id: number) {
-    this.router.navigate(['/product', id]);
-  }
 }
+
