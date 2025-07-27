@@ -113,3 +113,22 @@
 </div>
 
 
+<div class="container mb-5">
+  <div class="vertical-product-list">
+    <div class="card vertical-product-card" *ngFor="let commercaialproduct of commercaialproducts">
+      <div class="row g-0 align-items-center">
+        <div class="col-4 col-md-3">
+          <img [src]="commercaialproduct.image" class="img-fluid rounded-start vertical-product-img" alt="commercaialproduct">
+        </div>
+        <div class="col-8 col-md-9">
+          <div class="card-body text-center text-md-start">
+            <h6 class="vertical-card-title">{{ commercaialproduct.name }}</h6>
+            <p class="vertical-card-subtitle">{{ commercaialproduct.shortDesc }}</p>
+            <p class="card-text text-primary fw-bold mb-2">₹{{ commercaialproduct.price }}</p>
+            <a class="btn btn-outline-primary btn-sm" [routerLink]="['/commercaialproducts', commercaialproduct.id]">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
