@@ -1,4 +1,5 @@
-<div id="mainCarousel" class="carousel slide mb-5" data-bs-ride="carousel" data-bs-interval="3000" style="padding-top: 120px;">
+<!--
+<div id="mainCarousel" class="carousel slide mb-5" data-bs-ride="carousel" data-bs-interval="3000" style="padding-top: 85px;">
   <div class="carousel-inner text-center">
     <div class="carousel-item active">
       <img src="assets/products/banner1.jpg" class="carousel-img" alt="Banner 1">
@@ -14,11 +15,52 @@
     </div>
   </div>
 </div>
+-->
+<div id="mainCarousel" class="carousel slide mb-5" data-bs-ride="carousel" data-bs-interval="3000" style="padding-top: 85px;">
+  
+  <!-- 🔵 Indicators (dots) -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+
+  <!-- 🖼️ Carousel Images -->
+  <div class="carousel-inner text-center">
+    <div class="carousel-item active">
+      <img src="assets/products/banner1.jpg" class="carousel-img" alt="Banner 1">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/products/banner2.jpg" class="carousel-img" alt="Banner 2">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/products/banner3.jpg" class="carousel-img" alt="Banner 3">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/products/banner2.jpg" class="carousel-img" alt="Banner 4">
+    </div>
+  </div>
+
+  <!-- ⬅️➡️ Navigation Arrows (optional) 
+  <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+-->
+</div>
+
+
 
 
 
 <div class="container my-5 text-center">
   <h2 class="fw-bold mb-3">Our Services</h2>
+  <h6 class="fw-bold mb-6">All type of RO water purifiers are available for sale and repair</h6>
   <p class="text-muted">
     We provide complete water purification solutions tailored to your home and lifestyle.
   </p>
@@ -29,7 +71,7 @@
 
 
 <div class="container mb-5">
-  <h4 class="mb-3">Our Products</h4>
+  <h4 class="mb-3">Customer Favorites</h4>
   <div class="d-flex overflow-auto flex-nowrap product-horizontal">
     <div class="card product-card me-3 flex-shrink-0" *ngFor="let product of products">
       <img [src]="product.image" alt="Product" class="card-img-top product-img" />
@@ -45,29 +87,29 @@
 <div class="container my-5 text-center">
   <h2 class="fw-bold mb-3">Commercial Filter</h2>
   <p class="text-muted">
-    We provide complete water purification solutions tailored to your home and lifestyle.
+    Pure water solutions engineered for hotels, offices, factories, and commercial spaces.
   </p>
-  
 </div>
 <!-- Vertical Product Slider -->
- <!--
+ 
 <div class="container mb-5">
-  
-  <div class="d-flex flex-column overflow-auto product-vertical" style="max-height: 700px;">
-    <div class="card mb-3" *ngFor="let product of products">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="{{ product.image }}" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Product">
+  <div class="vertical-product-list">
+    <div class="card vertical-product-card" *ngFor="let commercaialproducts of commercaialproducts">
+      <div class="row g-0 align-items-center">
+        <div class="col-4 col-md-3">
+          <img [src]="commercaialproducts.image" class="img-fluid rounded-start vertical-product-img" alt="commercaialproducts">
         </div>
-        <div class="col-md-8">
-          <div class="card-body text-center">
-            <h6 class="card-title">{{ product.name }}</h6>
-            <p class="card-text text-primary fw-bold">₹{{ product.price }}</p>
-            <a class="btn btn-outline-primary btn-sm" [routerLink]="['/product', product.id]">View Details</a>
+        <div class="col-8 col-md-9">
+          <div class="card-body text-center text-md-start">
+            <h6 class="vertical-card-title">{{ commercaialproducts.name }}</h6>
+            <h1 class="vertical-card-title">{{ commercaialproducts.shortDesc }}</h1>
+            <p class="card-text text-primary fw-bold mb-2" style="color: #134563;">₹{{ commercaialproducts.price }}</p>
+            <a class="btn btn-outline-primary btn-sm" [routerLink]="['/commercaialproducts', commercaialproducts.id]">View Details</a>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
--->
+
+

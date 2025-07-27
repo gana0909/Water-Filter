@@ -87,12 +87,43 @@
 .card-title {
   font-size: 16px;
   margin-bottom: 6px;
+  color: #134563 !important;
 }
 
 .card-text {
   font-size: 14px;
 }
 /*product lit edting end*/
+/* vertical product lit edting Start*/
+.vertical-product-list {
+  max-height: 600px;
+  overflow-y: auto;
+  padding-right: 8px;
+}
 
+.vertical-product-card {
+  margin-bottom: 16px;
+  max-height: 160px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.vertical-product-img {
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.vertical-card-title {
+  color: #134563 !important; 
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 

@@ -1,35 +1,33 @@
 <footer class="footer text-white pt-4 pb-2 custom-footer">
-  
   <div class="container">
     <div class="row">
-
       <div class="col-md-4 mb-3">
         <h5>Jay Ganesh Enterprises</h5>
-        <p>We provide best-in-class water purification systems tailored to your needs. Trusted by thousands.</p>
+        <p>All type of RO water purifiers are available for sale and repair</p>
       </div>
-
       <div class="col-md-4 mb-3">
         <h5>Quick Links</h5>
         <ul class="list-unstyled">
-          <li><a href="#" class="text-white text-decoration-none">Home</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Products</a></li>
-          <li><a href="#" class="text-white text-decoration-none">About Us</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
+          <li><a [routerLink]="['/']" class="text-white text-decoration-none">Home</a></li>
+          <li><a [routerLink]="['/product']" class="text-white text-decoration-none">Products</a></li>
+          <li><a [routerLink]="['/contact']" class="text-white text-decoration-none">Contact</a></li>
         </ul>
       </div>
 
       <!-- Contact Info -->
+       
       <div class="col-md-4 mb-3">
         <h5>Contact Us</h5>
-        <p><i class="bi bi-telephone-fill me-2"></i>+91 72184 05002</p>
-        <p><i class="bi bi-envelope-fill me-2"></i>info@jayganesh.in</p>
-        <p><i class="bi bi-geo-alt-fill me-2"></i>Pune, Maharashtra</p>
+        <div class="d-flex align-items-center contact-block">
+          <i class="bi bi-telephone-fill contact-icon me-2"></i>
+          <a href="tel:+917218405002" class="contact-text text-decoration-none text-dark">
+            72184 05002
+          </a>
+        </div>
+        <p><i class="bi bi-geo-alt-fill me-2"></i>Purnanager, Pimpri Chinchwad.</p>
       </div>
-
     </div>
-
     <hr class="bg-white" />
-
     <!-- Copyright -->
     <div class="text-center">
       <p class="mb-0">&copy; 2025 Jay Ganesh Enterprises. All rights reserved.</p>

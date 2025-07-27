@@ -1,72 +1,86 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 import { Router } from '@angular/router';
+
+declare var bootstrap: any; // required for manual bootstrap carousel init
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent {
+export class HomeComponent implements AfterViewInit {
   constructor(private router: Router) {}
 
   products = [
     {
       id: 1,
-      name: 'PureDrop UV+RO 15L',
+      name: 'Curvv Black RO System',
       shortDesc: 'Advanced RO + UV system',
-      price: 2000,
+      price: 6800,
       image: 'assets/products/p1.jpg'
     },
     {
       id: 2,
-      name: 'AquaFresh Xpert 12L',
-      shortDesc: 'Double purification technology',
-      price: 2000,
-      image: 'assets/products/p2.jpg'
-    },
-    {
-      id: 3,
-      name: 'Kent Maxx 10L',
-      shortDesc: 'UV + UF water purifier',
-      price: 2000,
-      image: 'assets/products/p3.jpg'
-    },
-    {
-      id: 4,
-      name: 'Livpure Glitz 7L',
-      shortDesc: 'Smart LED indicators',
-      price: 2000,
-      image: 'assets/products/p4.jpg'
-    },
-    {
-      id: 5,
-      name: 'BlueStar Stella 8.2L',
+      name: 'AiQUA Organic Series',
       shortDesc: 'Hot & cold water purifier',
-      price: 2000,
-      image: 'assets/products/p5.jpg'
-    },
-    {
-      id: 6,
-      name: 'HUL Pureit Copper+ 10L',
-      shortDesc: 'Copper RO water purifier',
-      price: 2000,
+      price: 5500,
       image: 'assets/products/p6.jpg'
     },
     {
-      id: 7,
-      name: 'Eureka Forbes AquaSure 6L',
-      shortDesc: 'Energy-saving mode',
-      price: 2000,
+      id: 3,
+      name: 'PHOENIX & AXEONE',
+      shortDesc: 'Hot & cold water purifier',
+      price: 7000,
+      image: 'assets/products/p10.jpg'
+    },
+    {
+      id: 4,
+      name: 'Curvv White RO System',
+      shortDesc: 'Advanced RO + UV system',
+      price: 6800,
+      image: 'assets/products/p9.jpg'
+    },
+    {
+      id: 5,
+      name: 'Sunrise AQUA Black',
+      shortDesc: 'Double purification technology',
+      price: 5700,
+      image: 'assets/products/p2.jpg'
+    }
+  ];
+  commercaialproducts = [
+    {
+      id: 1,
+      name: 'Sunexa SU25',
+      shortDesc: '25 LPH',
+      price: 14000,
       image: 'assets/products/p7.jpg'
     },
     {
-      id: 8,
-      name: 'Tata Swach Nova 7L',
-      shortDesc: 'Chemical-free purification',
-      price: 2000,
-      image: 'assets/products/p8.jpg'
+      id: 2,
+      name: 'Sunexa SU50',
+      shortDesc: '50 LPH',
+      price: 18000,
+      image: 'assets/products/p11.jpg'
+    },
+    {
+      id: 3,
+      name: 'Sunexa SU75',
+      shortDesc: '75 LPH',
+      price: 24000,
+      image: 'assets/products/p12.jpg'
     }
   ];
 
-}
 
+
+  ngAfterViewInit(): void {
+    const myCarouselEl = document.querySelector('#mainCarousel');
+    if (myCarouselEl) {
+      new bootstrap.Carousel(myCarouselEl, {
+        interval: 3000,
+        ride: 'carousel'
+      });
+    }
+  }
+}
