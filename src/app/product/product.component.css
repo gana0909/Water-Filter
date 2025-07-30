@@ -1,0 +1,35 @@
+.card-img-top {
+  height: 150px;
+  object-fit: contain;
+  padding: 10px;
+  background-color: white;
+}
+.product-card{
+    background-color: #d7e2eb;
+}
+
+@media (max-width: 576px) {
+  .col-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+.product-img {
+  height: 200px; /* Ya jitna aap chaho */
+  object-fit: contain; /* Ya "cover" for full fill */
+  background-color: white; /* Piche ka color white */
+  padding: 10px; /* Thoda space image ke around */
+}
+
+.custom-btn {
+  background-color: #d7e2eb;
+  color: #134563;
+  border: 2px solid #134563;
+  font-size: large;
+  transition: all 0.3s ease;
+}
+
+.custom-btn.selected {
+  background-color: #134563;
+  color: white;
+}

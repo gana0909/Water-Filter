@@ -1,0 +1,19 @@
+<div class="container my-5" style="padding-top: 80px;">
+  <div class="row">
+    <div class="col-md-6 product-img">
+      <img [src]="product.image" class="img-fluid rounded shadow" alt="{{ product.name }}">
+    </div>
+    <div class="col-md-6 product-details" >
+      <h2>{{ product.name }}</h2>
+      <p class="lead">{{ product.shortDesc }}</p>
+      <ul class="list-group my-3">
+        <li class="list-group-item"><strong>Capacity:</strong> {{ product.capacity }}L</li>
+        <li class="list-group-item"><strong>Type:</strong> {{ product.type }}</li>
+        <li class="list-group-item"><strong>Power:</strong> {{ product.power }}W</li>
+        <li class="list-group-item"><strong>Warranty:</strong> {{ product.warranty }}</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
