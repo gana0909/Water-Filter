@@ -14,15 +14,44 @@ import { Injectable } from '@angular/core';
 export class ProductServiceComponent {
 
   private products = [
-  { id: 1, name: 'Likud Pure', price: 12000, description: '15L UV+RO', showOnHome: false,commercialFilter: false },
-  { id: 2, name: 'Likud Max', price: 15000, description: '20L RO+UF+TDS', showOnHome: false, commercialFilter: false },
-  { id: 3, name: 'Likud Ultra', price: 18000, description: '25L UV+RO+UF', showOnHome: false, commercialFilter: false },
-  { id: 4, name: 'Likud Pro', price: 20000, description: '30L with mineral booster', showOnHome: false, commercialFilter: false },
-  { id: 5, name: 'Likud Eco', price: 11000, description: '12L basic RO', showOnHome: false, commercialFilter: false },
-  { id: 6, name: 'Likud Elite', price: 21000, description: 'Smart purifier with app', showOnHome: false, commercialFilter: false },
-  { id: 7, name: 'Likud Mini', price: 9000, description: 'Compact model', showOnHome: false, commercialFilter: false },
-  {
-      id: 8,
+    {
+      id: 1,
+      name: 'Sunrise AQUA Grey',
+      shortDesc: 'Double purification technology',
+      price: 5700,
+      image: 'assets/products/p3.jpg',
+      showOnHome: false,
+      commercialFilter: false
+    },
+    {
+      id: 2,
+      name: 'Sunrise AQUA White',
+      shortDesc: 'Double purification technology',
+      price: 5700,
+      image: 'assets/products/p4.jpg',
+      showOnHome: false,
+      commercialFilter: false
+    },
+    {
+      id: 3,
+      name: 'Royal Plus Star Series',
+      shortDesc: 'Hot & cold water purifier',
+      price: 5500,
+      image: 'assets/products/p5.jpg',
+      showOnHome: false,
+      commercialFilter: false
+    },
+    {
+      id: 4,
+      name: 'Curvv White RO System',
+      shortDesc: 'Advanced RO + UV system',
+      price: 6800,
+      image: 'assets/products/p8.jpg',
+      showOnHome: false,
+      commercialFilter: false
+    },
+    {
+      id: 5,
       name: 'Curvv Black RO System',
       shortDesc: 'Advanced RO + UV system',
       price: 6800,
@@ -31,7 +60,7 @@ export class ProductServiceComponent {
       commercialFilter: false
     },
     {
-      id: 9,
+      id: 6,
       name: 'AiQUA Organic Series',
       shortDesc: 'Hot & cold water purifier',
       price: 5500,
@@ -40,7 +69,7 @@ export class ProductServiceComponent {
       commercialFilter: false
     },
     {
-      id: 10,
+      id: 7,
       name: 'PHOENIX & AXEONE',
       shortDesc: 'Hot & cold water purifier',
       price: 7000,
@@ -49,7 +78,7 @@ export class ProductServiceComponent {
       commercialFilter: false
     },
     {
-      id: 11,
+      id: 8,
       name: 'Curvv White RO System',
       shortDesc: 'Advanced RO + UV system',
       price: 6800,
@@ -58,7 +87,7 @@ export class ProductServiceComponent {
       commercialFilter: false
     },
     {
-      id: 12,
+      id: 9,
       name: 'Sunrise AQUA Black',
       shortDesc: 'Double purification technology',
       price: 5700,
@@ -67,7 +96,7 @@ export class ProductServiceComponent {
       commercialFilter: false
     },
     {
-      id: 13,
+      id: 10,
       name: 'Sunexa SU25',
       shortDesc: '25 LPH',
       price: 14000,
@@ -76,7 +105,7 @@ export class ProductServiceComponent {
       commercialFilter: true
     },
     {
-      id: 14,
+      id: 11,
       name: 'Sunexa SU50',
       shortDesc: '50 LPH',
       price: 18000,
@@ -85,7 +114,7 @@ export class ProductServiceComponent {
       commercialFilter: true
     },
     {
-      id: 15,
+      id: 12,
       name: 'Sunexa SU75',
       shortDesc: '75 LPH',
       price: 24000,

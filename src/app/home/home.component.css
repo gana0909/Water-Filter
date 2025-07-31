@@ -42,7 +42,10 @@
   display: block;
   margin: 0 auto; /* This ensures image is centered */
   border-radius: 12px;
+  object-fit: cover;
+  display: block;
 }
+
 
 @media (min-width: 768px) {
   .carousel-img {
@@ -144,4 +147,15 @@
   .vertical-card-subtitle {
     font-size: 0.85rem;
   }
+}
+
+
+
+
+
+
+
+/* optional: adjust fade duration */
+.carousel-fade .carousel-item {
+  transition: opacity .8s ease-in-out;
 }

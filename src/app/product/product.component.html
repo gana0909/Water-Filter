@@ -18,7 +18,7 @@
         <img [src]="product.image" class="card-img-top" alt="{{ product.name }}">
         <div class="card-body d-flex flex-column">
           <h5 class="fw-bold">{{ product.name }}</h5>
-          <p>{{ product.shortDesc }}</p>
+          <!--<p>{{ product.shortDesc }}</p>-->
           <p class="text-primary fw-semibold">₹{{ product.price }}</p>
           <a [routerLink]="['/productdetails', product.id]" class="btn btn-outline-primary mt-auto">View Details</a>
         </div>
