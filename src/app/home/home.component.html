@@ -74,21 +74,64 @@
   </p>
 </div>
 
+
+
+
+
 <!-- Domestic filter-->
 <div class="container mb-5">
   <h4 class="mb-3">Customer Favorites</h4>
-  <div class="d-flex overflow-auto flex-nowrap product-horizontal">
-    <!--<div class="card product-card me-3 flex-shrink-0" *ngFor="let product of products">  -->
-      <div class="card product-card me-3 flex-shrink-0" *ngFor="let product of topProducts">
+  <div class="d-flex overflow-auto flex-nowrap product-horizontal py-2">
+    <div class="card product-card me-3 flex-shrink-0" *ngFor="let product of topProducts">
+      
+      <!-- Dynamic offer badge -->
+      <div class="offer-badge" *ngIf="product.discountText; else autoBadge">
+        {{ product.discountText }}
+      </div>
+      <ng-template #autoBadge>
+        <div class="offer-badge" *ngIf="getDiscountPercent(product) > 0">
+          {{ getDiscountPercent(product) }}% OFF
+        </div>
+      </ng-template>
+
       <img [src]="product.image" alt="Product" class="card-img-top product-img" />
-      <div class="card-body text-center">
+      <div class="card-body text-center d-flex flex-column">
         <h6 class="card-title text-truncate fw-semibold">{{ product.name }}</h6>
-        <p class="card-text text-primary fw-bold mb-2">₹{{ product.price }}</p>
-        <a class="btn btn-outline-primary btn-sm" [routerLink]="['/productdetails', product.id]">View Details</a>
+
+        <div class="price-row mb-2">
+          <span class="sale-price">₹{{ product.price }}</span>
+          <span class="original-price" *ngIf="product.originalPrice && product.originalPrice > product.price">
+            ₹{{ product.originalPrice }}
+          </span>
+        </div>
+
+        <div class="discount-info mb-2" *ngIf="product.discountAmount">
+          Save ₹{{ product.discountAmount }}
+        </div>
+
+        <a class="btn btn-outline-primary btn-sm mt-auto" [routerLink]="['/productdetails', product.id]">
+          View Details
+        </a>
       </div>
     </div>
   </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <div class="container my-5 text-center">
   <h2 class="fw-bold mb-3">Commercial Filter</h2>

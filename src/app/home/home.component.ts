@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import { ProductServiceComponent } from '../product-service/product-service.component';
 
 
-declare var bootstrap: any; // required for manual bootstrap carousel init
+declare var bootstrap: any; 
 
 @Component({
   selector: 'app-home',
@@ -22,6 +22,10 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.topProducts = this.productService.getBestSellingProducts();
     this.commercialProducts = this.productService.getCommercialProducts();
+  }
+  getDiscountPercent(product: any): number {
+    if (!product.originalPrice || product.originalPrice <= product.price) return 0;
+    return Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100);
   }
   
 }

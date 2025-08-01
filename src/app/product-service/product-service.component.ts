@@ -21,7 +21,10 @@ export class ProductServiceComponent {
       price: 5700,
       image: 'assets/products/p3.jpg',
       showOnHome: false,
-      commercialFilter: false
+      commercialFilter: false,
+      originalPrice: 20000,
+      discountAmount: 13700,
+      discountText: '10% OFF'
     },
     {
       id: 2,
@@ -30,7 +33,10 @@ export class ProductServiceComponent {
       price: 5700,
       image: 'assets/products/p4.jpg',
       showOnHome: false,
-      commercialFilter: false
+      commercialFilter: false,
+      originalPrice: 20000,
+      discountAmount: 13700,
+      discountText: '15% OFF'
     },
     {
       id: 3,
@@ -39,7 +45,10 @@ export class ProductServiceComponent {
       price: 5500,
       image: 'assets/products/p5.jpg',
       showOnHome: false,
-      commercialFilter: false
+      commercialFilter: false,
+      originalPrice: 20000,
+      discountAmount: 13700,
+      discountText: '20% OFF'
     },
     {
       id: 4,
@@ -48,16 +57,22 @@ export class ProductServiceComponent {
       price: 6800,
       image: 'assets/products/p8.jpg',
       showOnHome: false,
-      commercialFilter: false
+      commercialFilter: false,
+      originalPrice: 20000,
+      discountAmount: 13200,
+      discountText: '25% OFF'
     },
     {
       id: 5,
       name: 'Curvv Black RO System',
       shortDesc: 'Advanced RO + UV system',
-      price: 6800,
+      price: 6200,
       image: 'assets/products/p1.jpg',
       showOnHome: true,
-      commercialFilter: false
+      commercialFilter: false,
+      originalPrice: 12999,
+      discountAmount: 6799,
+      discountText: '48% OFF'
     },
     {
       id: 6,
@@ -66,7 +81,10 @@ export class ProductServiceComponent {
       price: 5500,
       image: 'assets/products/p6.jpg',
       showOnHome: true,
-      commercialFilter: false
+      commercialFilter: false,
+      originalPrice: 13750,
+      discountAmount: 8250,
+      discountText: '35% OFF'
     },
     {
       id: 7,
@@ -75,16 +93,22 @@ export class ProductServiceComponent {
       price: 7000,
       image: 'assets/products/p10.jpg',
       showOnHome: true,
-      commercialFilter: false
+      commercialFilter: false,
+      originalPrice: 14000,
+      discountAmount: 7000,
+      discountText: '50% OFF'
     },
     {
       id: 8,
       name: 'Curvv White RO System',
       shortDesc: 'Advanced RO + UV system',
-      price: 6800,
+      price: 6500,
       image: 'assets/products/p9.jpg',
       showOnHome: true,
-      commercialFilter: false
+      commercialFilter: false,
+      originalPrice: 18500,
+      discountAmount: 12000,
+      discountText: '35% OFF'
     },
     {
       id: 9,
@@ -93,7 +117,10 @@ export class ProductServiceComponent {
       price: 5700,
       image: 'assets/products/p2.jpg',
       showOnHome: true,
-      commercialFilter: false
+      commercialFilter: false,
+      originalPrice: 14250,
+      discountAmount: 8550,
+      discountText: '40% OFF'
     },
     {
       id: 10,
@@ -102,7 +129,10 @@ export class ProductServiceComponent {
       price: 14000,
       image: 'assets/products/p7.jpg',
       showOnHome: false,
-      commercialFilter: true
+      commercialFilter: true,
+      originalPrice: 20000,
+      discountAmount: 13700,
+      discountText: '55% OFF'
     },
     {
       id: 11,
@@ -111,7 +141,10 @@ export class ProductServiceComponent {
       price: 18000,
       image: 'assets/products/p12.jpg',
       showOnHome: false,
-      commercialFilter: true
+      commercialFilter: true,
+      originalPrice: 20000,
+      discountAmount: 13700,
+      discountText: '60% OFF'
     },
     {
       id: 12,
@@ -120,7 +153,10 @@ export class ProductServiceComponent {
       price: 24000,
       image: 'assets/products/p11.jpg',
       showOnHome: false,
-      commercialFilter: true
+      commercialFilter: true,
+      originalPrice: 20000,
+      discountAmount: 13700,
+      discountText: '46% OFF'
     }
   ];
 
@@ -143,24 +179,5 @@ export class ProductServiceComponent {
   return this.products
     .filter(product => product.commercialFilter === true)
     .slice(0, limit);
-  }
-
-
-  
-}
-
-
-
-export class ProductService {
-  private products = [
-    { id: 1, name: 'Likud Pure', price: 12000, description: '15L UV+RO', isBestSeller: true },
-    { id: 2, name: 'Likud Max', price: 15000, description: '20L RO+UF+TDS', isBestSeller: false },
-    { id: 3, name: 'Likud Ultra', price: 18000, description: '25L UV+RO+UF', isBestSeller: true },
-    { id: 4, name: 'Likud Pro', price: 20000, description: '30L with mineral booster', isBestSeller: true },
-    { id: 5, name: 'Likud Eco', price: 11000, description: '12L basic RO', isBestSeller: false },
-    { id: 6, name: 'Likud Elite', price: 21000, description: 'Smart purifier with app', isBestSeller: true },
-    { id: 7, name: 'Likud Mini', price: 9000, description: 'Compact model', isBestSeller: false }
-  ];
-
-  
+  }  
 }
