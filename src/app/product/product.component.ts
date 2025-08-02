@@ -36,4 +36,10 @@ export class ProductComponent implements OnInit {
     this.selectedType = type;
     this.filterProducts();
   }
+
+  getDiscountPercent(product: any): number {
+    if (!product.originalPrice || product.originalPrice <= product.price) return 0;
+    return Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100);
+  }
+  
 }

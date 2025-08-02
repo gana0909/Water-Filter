@@ -6,11 +6,12 @@
     <div class="col-md-6 product-details" >
       <h2>{{ product.name }}</h2>
       <p class="lead">{{ product.shortDesc }}</p>
+      <h1 class="fw-bold mb-2 text-center">₹{{ product.price }}</h1>
       <ul class="list-group my-3">
-        <li class="list-group-item"><strong>Capacity:</strong> {{ product.capacity }}L</li>
-        <li class="list-group-item"><strong>Type:</strong> {{ product.type }}</li>
-        <li class="list-group-item"><strong>Power:</strong> {{ product.power }}W</li>
+        <li class="list-group-item"><strong>Capacity:</strong> {{ product.capacity }}</li>
         <li class="list-group-item"><strong>Warranty:</strong> {{ product.warranty }}</li>
+        <li class="list-group-item"><strong>Feature:</strong> {{ product.feature }}</li>
+        <li class="list-group-item"><strong>Installation:</strong> {{ product.installation }}</li>
       </ul>
     </div>
   </div>
