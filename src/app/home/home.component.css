@@ -1,6 +1,5 @@
-
 .mainCarousel {
-  padding-top: 120px; /* or whatever is your header height */
+  padding-top: 120px; 
 }
 
 .product-horizontal::-webkit-scrollbar,
@@ -17,7 +16,6 @@
 .page-nav {
   background-color: #1e1e1e; 
 }
-/*kahi ch change nahi */
 
 .custom-carousel-container {
   height: 400px;       
@@ -31,16 +29,13 @@
   border-radius: 12px;
   text-align: center;
 }
-/*
-/*container la padding ani Size fix zali*/
 
 .carousel-img {
   width: 100%;
   max-width: 1200px;
   height: 250px;
-  /*object-fit: cover;*/
   display: block;
-  margin: 0 auto; /* This ensures image is centered */
+  margin: 0 auto; 
   border-radius: 12px;
   object-fit: cover;
   display: block;
@@ -62,22 +57,9 @@
   }
 }
 
-
-/*product lit edting tart*/
-
-
-
-
-
-
-
-
-
 .card-text {
   font-size: 14px;
 }
-/*product lit edting end*/
-/* vertical product lit edting Start*/
 
 .vertical-product-card {
   border: none;
@@ -113,7 +95,6 @@
   margin-bottom: 0.5rem;
 }
 
-/* Mobile Tweaks */
 @media (max-width: 576px) {
   .vertical-product-img {
     height: 150px;
@@ -128,26 +109,13 @@
     font-size: 0.85rem;
   }
 }
-
-
-
-
-
-
-
-/* optional: adjust fade duration */
 .carousel-fade .carousel-item {
   transition: opacity .8s ease-in-out;
 }
 
-
-
-
-
 .product-horizontal {
   padding-bottom: 8px;
 }
-
 
 .product-card {
   width: 200px;

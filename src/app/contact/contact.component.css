@@ -20,11 +20,11 @@
 
 
 .contact-page-section {
-  overflow-x: hidden; /* Prevents horizontal scroll */
+  overflow-x: hidden; 
 }
 
 .map-wrapper iframe {
   width: 100%;
-  max-width: 100%; /* Ensures no overflow */
+  max-width: 100%; 
   display: block;
 }

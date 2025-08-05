@@ -122,9 +122,8 @@ a {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Give spacing below header in main layout so content doesn't go behind it */
 body, .main-content {
-  padding-top: 140px; /* adjust if header height changes */
+  padding-top: 140px; 
 }
 
 .border-line {
